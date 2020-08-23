@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finds - Kokoa Clone</title>
+</head>
+
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>100%</span>
+            <i class="fas fa-battery-full fa-lg"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+
+    <header class="screen-header">
+        <h1 class="screen-header__title">Find</h1>
+        <div class="screen-header__icons">
+            <span><i class="fas fa-search fa-lg"></i></span>
+            <span><i class="fas fa-cog fa-lg"></i></span>
+        </div>
+    </header>
+
+
+
+    <main class="main-screen">
+        <div class="find-icons">
+            <div class="find-icons__icon">
+                <i class="fas fa-qrcode"></i>
+                <span>QR Code</span>
+            </div>
+            <div class="find-icons__icon">
+                <i class="far fa-address-book"></i>
+                <span>Add by Contacts</span>
+            </div>
+            <div class="find-icons__icon">
+                <i class="fas fa-fingerprint"></i>
+                <span>Add by ID</span>
+            </div>
+            <div class="find-icons__icon">
+                <i class="far fa-envelope"></i>
+                <span>Invite</span>
+            </div>
+        </div>
+
+        <div class="recommended-friends">
+            <h6 class="recommended-friends__title">Recommended Friends</h6>
+            <span>You have no recommended friends.</span>
+        </div>
+
+        <div class="open-chat">
+            <div class="open-chat__header">
+                <h4>Open Chat</h4>
+                <span>Go to Openchat Home <i class="fas fa-chevron-right fa-xs"></i>
+                </span>
+            </div>
+            <div class="open-post">
+                <div class="open-post__column">
+                    <h5 class="open-post__title">#BTS</h5>
+                    <h6 class="open-post__hashtags"> #BTS#ARMY#Frineds</h6>
+                    <div class="open-post__members">
+                        <img
+                            src="data:image/png;base64,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" />
+                        <span class="open-post__member-count">2000 members</span>
+                        <div class="divider"></div>
+                        <span class="open-post__member-status">Active</span>
+                    </div>
+                </div>
+                <div class="open-post__column">
+                    <div class="open-post__photo">
+                        <img
+                            src="data:image/jpeg;base64,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" />
+                        <div class="open-post__heart-count">
+                            <i class="fas fa-heart fa-xs"></i><span>326</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="open-post">
+                <div class="open-post__column">
+                    <h5 class="open-post__title">BTS Gang</h5>
+                    <h6 class="open-post__hashtags2"> #jimin#iloveyou#fashionppl</h6>
+                    <div class="open-post__members">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSmgkGML2SaP-P8Mk_NWiWGXutr8bbQ8NYwiA&usqp=CAU" />
+                        <span class="open-post__member-count">299 members</span>
+                        <div class="divider"></div>
+                        <span class="open-post__member-status">Active</span>
+                    </div>
+                </div>
+                <div class="open-post__column">
+                    <div class="open-post__photo">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSmgkGML2SaP-P8Mk_NWiWGXutr8bbQ8NYwiA&usqp=CAU" />
+                        <div class="open-post__heart-count">
+                            <i class="fas fa-heart fa-xs"></i><span>215</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html"><i class="far fa-user fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="chats.html">
+                    <span class="nav__notification badge">1</span>
+                    <i class="far fa-comment fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="find.html"><i class="fas fa-search fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="more.html"><i class="fas fa-ellipsis-h fa-2x"></i></a>
+            </li>
+        </ul>
+    </nav>
+
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
